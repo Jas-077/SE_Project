@@ -1,0 +1,411 @@
+<html>
+<head>
+<title>Update</title> 
+<script src="https://kit.fontawesome.com/94cf5cc052.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+margin: 0;
+padding: 0;
+height: 400% 400%;
+background: url('update_back.jpg');
+background-size: cover;
+background-position :center;
+font-family: sans-serif;
+}
+i
+{
+    position: absolute;
+    margin-left: -8%;
+    margin-top: -4%;
+    height: 15%;
+}
+
+i:active
+{
+    transform: translateY(2px);
+}
+.logindex{
+    display: none;
+width: 23%;
+height: 40%;
+background: rgb(5, 5, 5, .5);
+color: cyan;
+font-size: 1.2em;
+text-shadow: 1px 1px black;
+position: absolute;
+margin-left: 38%;
+margin-top: -5%;
+box-sizing: border-box;
+padding: 70px 30px;
+box-shadow: 4px 2px black;
+border-style: solid;
+border-width: 1px;
+border-color: blue;
+}
+.avatar{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: 110px;
+}
+h1{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+}
+.logindex p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+.logindex input{
+width: 100%;
+margin-bottom:20px;
+}
+.logindex input[type="text"], input[type="password"]
+{
+border:none;
+border-bottom:1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+}
+.logindex input[type="submit"]
+{
+    display: inline-block;
+            background-color: #031832;
+            color: #66fcf1;
+            height: 50px;
+            width: 40%;
+            font-size: 24px;
+            border: 1px solid;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 5px 5px 3px rgb(2, 41, 88);
+            margin-left: 30%;
+
+}
+.logindex input[type="submit"]:hover
+{
+cursor: pointer;
+background: rgb(233, 233, 81);
+color: rgb(175, 34, 34);
+}
+.logindex a{
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
+color: darkgrey;
+}
+.logindex a:hover
+{
+color: lightblue;
+}
+header{
+    height: 10vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 0%;
+
+}
+
+li a:hover {
+  color: cyan;
+}
+.nav1
+{
+    margin: 0%;
+    background-color: black;
+    height: 100%;
+}
+.nav2
+{
+
+    width: 70%;
+    height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+          justify-content: space-between;
+}
+
+.logo
+{
+    height: 100%;
+    width: 100px;
+    border-radius: 0 50%  50% 0%;
+}
+
+.active
+{
+    color: lightgreen;
+}
+
+#Cap {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            position: relative;
+            margin-top: 7px;
+            margin-left: 100px;
+            margin-bottom: 7px;
+        }
+
+        footer
+{
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+
+}
+
+.foot
+{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.foot p
+{
+    margin-left: 42%;
+    color: white;
+    font-size: 1.3em;
+  text-shadow: 2px 2px 4px red;
+}
+.foot a
+{
+    margin-left: 49%;
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    margin-top: -1%;
+}
+main
+{
+height: 80vh;
+}
+
+.but
+{
+    display: inline-block;
+    outline: none;
+    height: 100%;
+    width:30%;
+    padding: 14px 25px;
+    font-size: 1.3em;
+    border-style: solid;
+    border-color: aqua;
+    background-color: rgb(35, 98, 156);
+    color: cyan;
+    text-shadow: 2px 2px black;
+    box-shadow: 2px 2px black;
+}
+.but:hover
+{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px rgb(190, 184, 243);
+    border-color: bisque;
+}
+.button-container
+{
+    margin-top: 5%;
+    margin-left: 35%;
+    width:30%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+</head>
+<body>
+<header >
+    <div class="nav1">
+        <div class="nav2">
+            <img src="logo.jpg" class="logo">
+            <li>
+                <a href="index.php">HOME</a>
+            </li>
+            <li>
+                <a href="update.html" class="active">UPDATE</a>
+            </li>
+            <li>
+                <a href="TeamSelection.php">TEAM</a>
+            </li>
+            <li>
+                <a href="Match.php" >MATCH</a>
+            </li>
+            <li>
+                <a href="logout.php" >LOGOUT</a>
+            </li>
+        </div>
+    </div>
+</header>
+<main>
+    <p style="color: white;font-size: 1.5em;margin-left: 35%;font-family: Chalkboard;" id="process">Choose what needs to be Updated</p>
+    <div class="button-container">
+<button id="but1" onclick="function1()" class="but" value="h">Username</button>
+<button id="but2" onclick="function2()" class="but">Password</button>
+<button id="but3" onclick="function3()" class="but">E-mail</button>
+</div>
+<div class="logindex">
+    <form onsubmit="return validate1()" method="POST" name="form1" action="update_user.php">
+       <i class="far fa-times-circle" onclick="close1()"></i>
+       <center><p style="font-size: 1.4em;margin-left: -10%; margin-top: -20%;margin-bottom: 20%;font-family: 'Times New Roman', Times, serif;">Update Username</p></center> 
+      <p> Enter new Username:</p>
+      <input type="text" required name="user">
+      <p>Confirm Username:</p>
+      <input type="text" required name="user2">
+      <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="logindex">
+    <form onsubmit="return validate2()" method="POST" name="form2" action="update_pass.php">
+        <i class="far fa-times-circle" onclick="close1()"></i>
+        <center><p style="font-size: 1.4em; margin-top: -20%;margin-bottom: 20%;font-family: 'Times New Roman', Times, serif;">Update Password</p></center> 
+       <p> Enter new Password:</p>
+       <input type="password" required name="pass" >
+       <p>Confirm Password:</p>
+       <input type="password" required name="pass2" >
+       <input type="submit" value="Submit">
+     </form>
+</div>
+<div class="logindex">
+    <form onsubmit="return validate3()" method="POST" name="form3" action="update_mail.php">
+        <i class="far fa-times-circle" onclick="close1()"></i>
+        <center><p style="font-size: 1.4em; margin-top: -20%;margin-bottom: 20%;font-family: 'Times New Roman', Times, serif;">Update Email</p></center> 
+       <p> Enter new Email:</p>
+       <input type="text" required name="mail">
+       <p>Confirm Email:</p>
+       <input type="text" required name="mail2">
+       <input type="submit" value="Submit">
+     </form>
+</div>
+</main>
+
+<footer>
+    <div class="foot">
+        <p>Copyright © 2020 365Predict</p>
+      <a href="https://github.com/Jas-077/SE_Project.git" target="_blank">
+        <i class="fa fa-github" style="color: white;font-size: 2.0em;"></i>
+        </a>
+    </div>
+</footer>
+</body>
+</head>
+</html>
+<script>
+  function  function1()
+    {
+       document.getElementsByClassName("but")[0].style.display="none";
+       document.getElementsByClassName("but")[1].style.display="none";
+       document.getElementsByClassName("but")[2].style.display="none";
+       document.getElementsByClassName("logindex")[0].style.display="block";
+       document.getElementById("process").innerHTML="Pls Update";
+       document.getElementById("process").style.marginLeft="45%";
+    }
+    function  function2()
+    {
+       document.getElementsByClassName("but")[0].style.display="none";
+       document.getElementsByClassName("but")[1].style.display="none";
+       document.getElementsByClassName("but")[2].style.display="none";
+       document.getElementsByClassName("logindex")[1].style.display="block";
+       document.getElementById("process").innerHTML="Pls Update";
+       document.getElementById("process").style.marginLeft="45%";
+    }
+    function  function3()
+    {
+       document.getElementsByClassName("but")[0].style.display="none";
+       document.getElementsByClassName("but")[1].style.display="none";
+       document.getElementsByClassName("but")[2].style.display="none";
+       document.getElementsByClassName("logindex")[2].style.display="block";
+       document.getElementById("process").innerHTML="Pls Update";
+       document.getElementById("process").style.marginLeft="45%";
+    }
+    function close1()
+    {
+        for(var i=0;i<3;i++)
+        {
+            document.getElementsByClassName("but")[i].style.display="inline-block";
+        }
+        for(var i=0;i<3;i++)
+        {
+            document.getElementsByClassName("logindex")[i].style.display="none";
+        }
+        document.getElementById("process").innerHTML="Choose what needs to be Updated";
+       document.getElementById("process").style.marginLeft="35%";
+    }
+    function validate1()
+    {
+        var a=document.forms["form1"]["user"].value;
+        var b=document.forms["form1"]["user2"].value;
+        if(a==b)
+        {
+        alert("Credentials Successfully Updated");
+        return true;
+        }
+        else
+        {
+            alert("Pls enter same credentials");
+        return false;
+        }
+    }
+    function validate2()
+    {
+        var a=document.forms["form2"]["pass"].value;
+        var b=document.forms["form2"]["pass2"].value;
+        if(a==b)
+        {
+        alert("Credentials Successfully Updated");
+        return true;
+        }
+        else
+        {
+            alert("Pls enter same credentials");
+        return false;
+        }
+    }
+    function validate3()
+    {
+        var a=document.forms["form3"]["mail"].value;
+        var b=document.forms["form3"]["mail2"].value;
+        if(a==b)
+        {
+        alert("Credentials Successfully Updated");
+        return true;
+        }
+        else
+        {
+            alert("Pls enter same credentials");
+        return false;
+        }
+    }
+</script>
