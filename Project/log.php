@@ -328,10 +328,11 @@ height: 80vh;
                 </div>
                 <p>Enter Captcha (*):</p>
                 <input type="text" name="cap" minlength="1" maxlength="7" pattern="[0-9a-zA-Z]{1,7}"
-                    placeholder="Enter the Captcha here" required>
+                    placeholder="Enter the Captcha here" required onkeyup="this.value=this.value.toUpperCase()">
                     
 <input type="submit" name="" value="Login"> 
-<a href="sign.php">Don't have an account? Sign Up!</a>
+<a href="sign.php">Don't have an account? Sign Up!</a><br>
+<a href="forget.php">Forgot Password? Click Here!</a>
 </form>
 </div>
 </main>

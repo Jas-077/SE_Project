@@ -1,0 +1,40 @@
+<?php
+require_once "db.php";
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+/* If you installed PHPMailer without Composer do this instead: */
+
+require 'PHPMailer-master/src/Exception.php';
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+if(($_SERVER["REQUEST_METHOD"] == "POST"))
+{
+$a= $_POST["otp"];
+$sql2="select otp from otp_con";
+$result = mysqli_query($link, $sql2);
+$row=mysqli_fetch_assoc($result);
+$b=$row["otp"];
+//$sql3=$link->prepare("DELETE FROM otp_con WHERE otp='$a'");
+if($a==$b)
+{
+    echo '<script>
+    alert("Right OTP entered 👍");
+    location.href="forget3.php";
+    </script>';
+}
+else{
+    echo '<script>
+    alert("Wrong OTP entered");
+    location.href="forget.php";
+    </script>';
+}
+}
+?>

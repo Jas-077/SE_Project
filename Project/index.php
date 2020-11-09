@@ -189,7 +189,7 @@ font-family:"Chalkboard SE";
     document.getElementById("two").innerHTML="UPDATE";
     document.getElementById("two").href="update.html";
     document.getElementById("three").innerHTML="TEAM";
-    document.getElementById("three").href="TeamSelection.php";
+    document.getElementById("three").href="Team/team.html";
     document.getElementById("four").innerHTML="MATCH";
     document.getElementById("four").href="Match.php";
     document.getElementById("five").innerHTML="LOGOUT";

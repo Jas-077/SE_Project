@@ -175,47 +175,37 @@ border-radius: 0 50%  50% 0%;
 color: lightgreen;
 }
 
-
-.image1
-{
-position: relative;
-left: 450px;
-}
-.image2
-{
-position: relative;
-left: 500px;
-}
 .p1
 {
-position: relative;
-left: 500px;
 font-size: 200px;
 color: rgb(124,252,0);
 font-family: 'Impact'; 
+margin-left: 40%;
+text-shadow: 3px 3px 3px rgb(217, 245, 95);
 }
 .p2
 {
-position: relative;
-left: 450px;
+
 font-size: 200px;
 color: rgb(57,255,20);
 font-family: 'Impact'; 
+margin-left: 40%;
+text-shadow: 3px 3px 3px rgb(217, 245, 95);
 }
 p2
 {
-font-size: 150px;
-position: relative;
-left: 550px; 
-color: Yellow;
+font-size: 5em;
+color: rgb(196, 196, 88);
 }
 p3
 {
-position: relative;
-left: 300px;
+  position: relative;
+left: 5%;
 font-size: 75px;
-font-family: 'Serif';
-color: DarkRed;
+font-family: ff-tisa-sans-web-pro, sans-serif;
+font-weight: 100;
+color: rgb(252, 112, 245);
+text-shadow: 3px 3px 3px rgb(5, 44, 173);
 }
 p4
 {
@@ -273,25 +263,7 @@ footer
   font-family: Chalkboard;
   text-shadow: 1px 1px 2px whitesmoke;
 }
-#b1 
-{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    margin-left: 30%;
-}
-    .loader {
-  border: 16px solid #e418d3;
-  border-radius: 50%;
-  border-top: 16px solid rgb(98, 150, 245);
-  border-right: 16px solid rgb(90, 235, 155);
-  border-bottom: 16px solid rgb(231, 103, 103);
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s alternate infinite;
-}
+
 #two
 {
   animation: spin2 2s alternate infinite;
@@ -322,15 +294,50 @@ footer
   100% { transform: rotate(360deg);
   margin-top: 37%; }
 }
+table
+{
+  border-width: 1px;
+  border-color: white;
+  border-style:dashed;
+  border-top-color: red;
+  border-bottom-color: red;
+  border-left-color: blue;
+  border-right-color: blue;
+  margin-left: 30%;
+}
+
+#tab 
+{
+  width:100px;
+  height: 500px;
+  background-color: rgb(18, 146, 67);
+  
+}
+#v 
+{
+  color:white;
+  font-size: 7em;
+  position: absolute;
+  margin-left: 1.2%;
+  margin-top:7%;
+  font-family: Chalkboard;
+  color: rgb(236, 12, 225);
+  text-shadow: 3px 3px 3px violet;
+}
+#s
+{
+  color:white;
+  font-size: 7em;
+  position: absolute;
+  margin-left: 2%;
+  margin-top:20%;
+  font-family: Chalkboard;
+  color: rgb(236, 12, 225);
+  text-shadow: 3px 3px 3px violet;
+}
 </style>
 </head>
-
-<body onload="pre()">
-  <div id="b1">
-    <div class="loader"></div>
-    <div class="loader" id="two"></div>
-  </div>
-  <span id="dis">Calculating Score...</span>
+<body>
 <header id="head1">
     <div class="nav1">
         <div class="nav2">
@@ -362,14 +369,15 @@ footer
 <br>
 <br>
 <br>
-<img src="<?php echo $image;?>" width="400"  alt="image" class="image1">
-<p1 class="p1"><?php echo $s1; ?></p1>
-<br>
-<p2>VS</p2>
-<br>
-<br>
-<p1 class="p2"><?php echo $s2; ?></p1>
-<img src="<?php echo $image2;?>" width="400"  alt="image" class="image2">
+<table>
+  <tr>
+    <td><img src="<?php echo $image;?>" width="400"  alt="image" class="image1"><span id="v">V</span><span id="s">S</span>
+    <br><p1 class="p1"><?php echo $s1; ?></p1></td>
+    <td><div id="tab"></div></td>
+    <td><img src="<?php echo $image2;?>" width="400"  alt="image" class="image2"><br><p1 class="p2"><?php echo $s2; ?></p1></td>
+  </tr>
+</table>
+
 <br>
 <br>
 <p4>Thanks for playing.Pls Sign Out.</p4>
